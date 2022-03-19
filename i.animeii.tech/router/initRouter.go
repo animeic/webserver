@@ -23,4 +23,5 @@ func InitRouter(app *gin.Engine) {
 	app.Static("/p", "./static/i.animeii.tech/p")
 	// anime page
 	app.Static("/anime", "./static/i.animeii.tech/anime")
+	app.Static("/about", "./static/i.animeii.tech/about")
 }
