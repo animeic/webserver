@@ -11,6 +11,8 @@ func InitRouter(app *gin.Engine) {
 	// 静态路由
 	app.Use(middleware.Cors())
 	app.StaticFile("/", "./static/i.animeii.tech/index.html")
+	app.StaticFile("/searchindex.xml", "./static/i.animeii.tech/searchindex.xml")
+	app.StaticFile("/sitemap.xml", "./static/i.animeii.tech/sitemap.xml")
 	app.Static("/img", "./static/i.animeii.tech/img")
 	app.StaticFS("/images", http.Dir("./static/i.animeii.tech/images"))
 	// app.Static("/images", "./static/i.animeii.tech/images")
